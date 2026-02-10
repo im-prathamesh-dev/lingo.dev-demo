@@ -6,7 +6,6 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   translate:
@@ -14,11 +13,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-
-      - name: Run Lingo.dev
-        uses: lingodotdev/lingo.dev@main
+      - uses: lingodotdev/lingo.dev@main
         with:
           api-key: ${{ secrets.LINGODOTDEV_API_KEY }}
-          pull-request: true
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
