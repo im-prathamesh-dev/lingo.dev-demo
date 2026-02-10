@@ -1,5 +1,3 @@
 {
-  "welcome": "Welcome to TechMantra",
-  "register": "Register Now",
-  "success": "Payment Successful"
+  "checkout": "Checkout Now"
 }
